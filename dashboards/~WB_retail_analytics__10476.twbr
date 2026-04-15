@@ -1,0 +1,1753 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleaned' inline='true' name='federated.13pmsdm1xdnqaw18m9ylk1arakmy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned' name='textscan.1xmcurr121ty6413j5lqa0vibn02'>
+            <connection class='textscan' directory='C:/Users/HP/Downloads/Data Science/Final_Projects/retail-intelligence-analytics/data' filename='cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1xmcurr121ty6413j5lqa0vibn02' name='cleaned.csv' table='[cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Invoice' ordinal='0' />
+            <column datatype='string' name='StockCode' ordinal='1' />
+            <column datatype='string' name='Description' ordinal='2' />
+            <column datatype='integer' name='Quantity' ordinal='3' />
+            <column datatype='datetime' name='InvoiceDate' ordinal='4' />
+            <column datatype='real' name='Price' ordinal='5' />
+            <column datatype='real' name='Customer ID' ordinal='6' />
+            <column datatype='string' name='Country' ordinal='7' />
+            <column datatype='integer' name='InvoiceYear' ordinal='8' />
+            <column datatype='integer' name='InvoiceMonth' ordinal='9' />
+            <column datatype='string' name='InvoiceMonthName' ordinal='10' />
+            <column datatype='integer' name='InvoiceDay' ordinal='11' />
+            <column datatype='string' name='InvoiceDayName' ordinal='12' />
+            <column datatype='real' name='TotalPrice' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Invoice</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Invoice]</local-name>
+            <parent-name>[cleaned.csv]</parent-name>
+            <remote-alias>Invoice</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StockCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StockCode]</local-name>
+            <parent-name>[cleaned.csv]</parent-name>
+            <remote-alias>StockCode</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[cleaned.csv]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[cleaned.csv]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvoiceDate</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[InvoiceDate]</local-name>
+            <parent-name>[cleaned.csv]</parent-name>
+            <remote-alias>InvoiceDate</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[cleaned.csv]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[cleaned.csv]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[cleaned.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvoiceYear</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InvoiceYear]</local-name>
+            <parent-name>[cleaned.csv]</parent-name>
+            <remote-alias>InvoiceYear</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvoiceMonth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InvoiceMonth]</local-name>
+            <parent-name>[cleaned.csv]</parent-name>
+            <remote-alias>InvoiceMonth</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvoiceMonthName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[InvoiceMonthName]</local-name>
+            <parent-name>[cleaned.csv]</parent-name>
+            <remote-alias>InvoiceMonthName</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvoiceDay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InvoiceDay]</local-name>
+            <parent-name>[cleaned.csv]</parent-name>
+            <remote-alias>InvoiceDay</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvoiceDayName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[InvoiceDayName]</local-name>
+            <parent-name>[cleaned.csv]</parent-name>
+            <remote-alias>InvoiceDayName</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalPrice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalPrice]</local-name>
+            <parent-name>[cleaned.csv]</parent-name>
+            <remote-alias>TotalPrice</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total Revenue' datatype='real' name='[Calculation_737183023865389056]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([TotalPrice])' />
+      </column>
+      <column caption='Total Customers' datatype='integer' name='[Calculation_737183023865851905]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Customer ID])' />
+      </column>
+      <column caption='Total Orders' datatype='integer' name='[Calculation_737183023866097666]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Invoice])' />
+      </column>
+      <column caption='Repeat Customers' datatype='real' name='[Calculation_737183023867781123]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF { FIXED [Customer ID] : COUNTD([Invoice]) } &gt; 1 THEN [Customer ID] END' />
+      </column>
+      <column caption='Repeat Customer %' datatype='real' name='[Calculation_737183023870148612]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Calculation_737183023867781123]) / COUNTD([Customer ID])*100' />
+      </column>
+      <column caption='repeat vs new' datatype='string' name='[Calculation_737183023893778437]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF { FIXED [Customer ID] : COUNTD([Invoice]) } &gt; 1 &#13;&#10;THEN &quot;Repeat&quot; &#13;&#10;ELSE &quot;New&quot; &#13;&#10;END' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='&quot;Korea&quot;' value='&quot;South Korea&quot;' />
+        </semantic-values>
+      </column>
+      <column datatype='real' name='[Customer ID]' role='dimension' type='ordinal' />
+      <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+      <column caption='Invoice Day Name' datatype='string' name='[InvoiceDayName]' role='dimension' type='nominal' />
+      <column caption='Invoice Day' datatype='integer' name='[InvoiceDay]' role='dimension' type='quantitative' />
+      <column caption='Invoice Month Name' datatype='string' name='[InvoiceMonthName]' role='dimension' type='nominal' />
+      <column caption='Invoice Month' datatype='integer' name='[InvoiceMonth]' role='dimension' type='quantitative' />
+      <column caption='Invoice Year' datatype='integer' name='[InvoiceYear]' role='dimension' type='quantitative' />
+      <column caption='Stock Code' datatype='string' name='[StockCode]' role='dimension' type='nominal' />
+      <column caption='Total Price' datatype='real' name='[TotalPrice]' role='measure' type='quantitative' />
+      <column caption='cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]' role='measure' type='quantitative' />
+      <column-instance column='[InvoiceDate]' derivation='Month-Trunc' name='[tmn:InvoiceDate:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Country)' hidden='true' name='[Action (Country)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Country]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (MONTH(Invoice Date))' hidden='true' name='[Action (MONTH(Invoice Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tmn:InvoiceDate:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/HP/AppData/Local/Temp/TableauTemp/#TableauTemp_17d9zq11gzxnbs1b9innw06abqaq.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/15/2026 02:53:55 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Invoice</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Invoice]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Invoice</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>102185</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StockCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StockCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StockCode</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13139</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14187</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quantity</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>162</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InvoiceDate</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[InvoiceDate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InvoiceDate</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cleaned.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>98033</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price</remote-alias>
+              <ordinal>5</ordinal>
+              <family>cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>396</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer ID</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Customer ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer ID</remote-alias>
+              <ordinal>6</ordinal>
+              <family>cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16502</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>7</ordinal>
+              <family>cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>74</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InvoiceYear</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[InvoiceYear]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InvoiceYear</remote-alias>
+              <ordinal>8</ordinal>
+              <family>cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InvoiceMonth</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[InvoiceMonth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InvoiceMonth</remote-alias>
+              <ordinal>9</ordinal>
+              <family>cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InvoiceMonthName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[InvoiceMonthName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InvoiceMonthName</remote-alias>
+              <ordinal>10</ordinal>
+              <family>cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InvoiceDay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[InvoiceDay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InvoiceDay</remote-alias>
+              <ordinal>11</ordinal>
+              <family>cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InvoiceDayName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[InvoiceDayName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InvoiceDayName</remote-alias>
+              <ordinal>12</ordinal>
+              <family>cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalPrice</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalPrice]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalPrice</remote-alias>
+              <ordinal>13</ordinal>
+              <family>cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3391</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='cleaned.csv' id='cleaned.csv_18BB45B5A4374F72B8714808F2B6B2A5'>
+            <properties context=''>
+              <relation connection='textscan.1xmcurr121ty6413j5lqa0vibn02' name='cleaned.csv' table='[cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Invoice' ordinal='0' />
+                  <column datatype='string' name='StockCode' ordinal='1' />
+                  <column datatype='string' name='Description' ordinal='2' />
+                  <column datatype='integer' name='Quantity' ordinal='3' />
+                  <column datatype='datetime' name='InvoiceDate' ordinal='4' />
+                  <column datatype='real' name='Price' ordinal='5' />
+                  <column datatype='real' name='Customer ID' ordinal='6' />
+                  <column datatype='string' name='Country' ordinal='7' />
+                  <column datatype='integer' name='InvoiceYear' ordinal='8' />
+                  <column datatype='integer' name='InvoiceMonth' ordinal='9' />
+                  <column datatype='string' name='InvoiceMonthName' ordinal='10' />
+                  <column datatype='integer' name='InvoiceDay' ordinal='11' />
+                  <column datatype='string' name='InvoiceDayName' ordinal='12' />
+                  <column datatype='real' name='TotalPrice' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.13pmsdm1xdnqaw18m9ylk1arakmy'>
+      <datasources>
+        <datasource caption='cleaned' name='federated.13pmsdm1xdnqaw18m9ylk1arakmy' />
+      </datasources>
+      <datasource-dependencies datasource='federated.13pmsdm1xdnqaw18m9ylk1arakmy'>
+        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+          <semantic-values semantic-role='[Country].[Name]'>
+            <semantic-value key='&quot;Korea&quot;' value='&quot;South Korea&quot;' />
+          </semantic-values>
+        </column>
+        <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+        <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[InvoiceDate]' derivation='Month-Trunc' name='[tmn:InvoiceDate:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]'>
+        <groupfilter function='level-members' level='[none:Country:nk]' />
+      </filter>
+      <filter class='quantitative' column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[tmn:InvoiceDate:qk]' included-values='in-range'>
+        <min>#2009-12-01 00:00:00#</min>
+        <max>#2011-12-01 00:00:00#</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_FE43E96DBC314FE78D6444A7CAD07F53]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Retail Analytics Dashboard' type='sheet' worksheet='map' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Retail Analytics Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_03415E414ECE4FC39ECEC624D8DCD4D1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Retail Analytics Dashboard' type='sheet' worksheet='Monthly Revenue Trend' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Retail Analytics Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Monthly Revenue Trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Sitka Small Semibold' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned' name='federated.13pmsdm1xdnqaw18m9ylk1arakmy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13pmsdm1xdnqaw18m9ylk1arakmy'>
+            <column caption='Total Revenue' datatype='real' name='[Calculation_737183023865389056]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([TotalPrice])' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Korea&quot;' value='&quot;South Korea&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column caption='Total Price' datatype='real' name='[TotalPrice]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[InvoiceDate]' derivation='Month-Trunc' name='[tmn:InvoiceDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_737183023865389056]' derivation='User' name='[usr:Calculation_737183023865389056:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action1_FE43E96DBC314FE78D6444A7CAD07F53]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Action (Country)]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[tmn:InvoiceDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[tmn:InvoiceDate:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[usr:Calculation_737183023865389056:qk]' field-type='quantitative' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <tooltip column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[usr:Calculation_737183023865389056:qk]' />
+              <text column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[usr:Calculation_737183023865389056:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Medium' fontsize='8'>$ &lt;</run>
+                <run fontname='Tableau Medium' fontsize='8'>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[usr:Calculation_737183023865389056:qk]</run>
+                <run fontname='Tableau Medium' fontsize='8'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+                <format attr='font-family' value='Sitka Small' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5712155103683472' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ffda69' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[usr:Calculation_737183023865389056:qk]</rows>
+        <cols>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[tmn:InvoiceDate:qk]</cols>
+      </table>
+      <simple-id uuid='{048BDEA1-70F4-4E4B-AFCA-79E9039BC191}' />
+    </worksheet>
+    <worksheet name='Top 10 Customers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Sitka Small Semibold' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned' name='federated.13pmsdm1xdnqaw18m9ylk1arakmy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13pmsdm1xdnqaw18m9ylk1arakmy'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Korea&quot;' value='&quot;South Korea&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='real' name='[Customer ID]' role='dimension' type='ordinal' />
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column caption='Total Price' datatype='real' name='[TotalPrice]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer ID]' derivation='None' name='[none:Customer ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[TotalPrice]' derivation='Sum' name='[sum:TotalPrice:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[InvoiceDate]' derivation='Month-Trunc' name='[tmn:InvoiceDate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action1_FE43E96DBC314FE78D6444A7CAD07F53]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Customer ID:ok]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([TotalPrice])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Customer ID:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Customer ID:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[sum:TotalPrice:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Customer ID:ok]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Action (Country)]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[tmn:InvoiceDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels-decoration'>
+            <format attr='vertical-align' value='top' />
+            <format attr='text-align' value='auto' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[sum:TotalPrice:qk]' palette='brown_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[sum:TotalPrice:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Medium' fontsize='8'>$ &lt;</run>
+                <run fontname='Tableau Medium' fontsize='8'>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[sum:TotalPrice:qk]</run>
+                <run fontname='Tableau Medium' fontsize='8'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+                <format attr='font-family' value='Sitka Small' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffda69' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[sum:TotalPrice:qk]</rows>
+        <cols>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Customer ID:ok]</cols>
+      </table>
+      <simple-id uuid='{A4D40DB1-BBE6-443F-9FBB-A2BB4645001E}' />
+    </worksheet>
+    <worksheet name='map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Sitka Small Semibold' fontsize='10'>Sales Across Country</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned' name='federated.13pmsdm1xdnqaw18m9ylk1arakmy' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.13pmsdm1xdnqaw18m9ylk1arakmy'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Korea&quot;' value='&quot;South Korea&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column caption='Total Price' datatype='real' name='[TotalPrice]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TotalPrice]' derivation='Sum' name='[sum:TotalPrice:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[InvoiceDate]' derivation='Month-Trunc' name='[tmn:InvoiceDate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Longitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Latitude (generated)]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Longitude (generated)]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[tmn:InvoiceDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Longitude (generated)]' field-type='quantitative' max='60790030.300189093' min='19940188.718432657' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Latitude (generated)]' field-type='quantitative' max='11919098.577984096' min='-2394017.581715703' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[sum:TotalPrice:qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]' value='false' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[sum:TotalPrice:qk]' />
+              <tooltip column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[sum:TotalPrice:qk]' />
+              <text column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]' />
+              <lod column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]' />
+              <geometry column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Country:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Total Sales:&#9;</run>
+                <run bold='true' fontcolor='#757575'>$</run>
+                <run fontcolor='#757575'>Æ </run>
+                <run bold='true'><![CDATA[<[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[sum:TotalPrice:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Semibold' fontsize='8'>&lt;</run>
+                <run fontname='Tableau Semibold' fontsize='8'>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]</run>
+                <run fontname='Tableau Semibold' fontsize='8'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-transparency' value='229' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Latitude (generated)]</rows>
+        <cols>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{E37D7660-810B-4C01-89F8-B94C43A307E3}' />
+    </worksheet>
+    <worksheet name='repeat vs new'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Sitka Small Semibold' fontsize='10'>Repeat vs New Customers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned' name='federated.13pmsdm1xdnqaw18m9ylk1arakmy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13pmsdm1xdnqaw18m9ylk1arakmy'>
+            <column caption='repeat vs new' datatype='string' name='[Calculation_737183023893778437]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF { FIXED [Customer ID] : COUNTD([Invoice]) } &gt; 1 &#13;&#10;THEN &quot;Repeat&quot; &#13;&#10;ELSE &quot;New&quot; &#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Korea&quot;' value='&quot;South Korea&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='real' name='[Customer ID]' role='dimension' type='ordinal' />
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Invoice]' role='measure' type='quantitative' />
+            <column-instance column='[Customer ID]' derivation='CountD' name='[ctd:Customer ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_737183023893778437]' derivation='None' name='[none:Calculation_737183023893778437:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[InvoiceDate]' derivation='Month-Trunc' name='[tmn:InvoiceDate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action1_FE43E96DBC314FE78D6444A7CAD07F53]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Action (Country)]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[tmn:InvoiceDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[ctd:Customer ID:qk]' scope='rows' value='Total Customers' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[ctd:Customer ID:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Repeat vs New:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Calculation_737183023893778437:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Total Customers:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[ctd:Customer ID:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Medium' fontsize='8'>&lt;</run>
+                <run fontname='Tableau Medium' fontsize='8'>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[ctd:Customer ID:qk]</run>
+                <run fontname='Tableau Medium' fontsize='8'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+                <format attr='font-family' value='Sitka Small' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#fed969' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[ctd:Customer ID:qk]</rows>
+        <cols>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Calculation_737183023893778437:nk]</cols>
+      </table>
+      <simple-id uuid='{966E9CBD-1A4C-4C7F-8063-A42F36F0E9FC}' />
+    </worksheet>
+    <worksheet name='repeat_customer%'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned' name='federated.13pmsdm1xdnqaw18m9ylk1arakmy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13pmsdm1xdnqaw18m9ylk1arakmy'>
+            <column caption='Repeat Customers' datatype='real' name='[Calculation_737183023867781123]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF { FIXED [Customer ID] : COUNTD([Invoice]) } &gt; 1 THEN [Customer ID] END' />
+            </column>
+            <column caption='Repeat Customer %' datatype='real' name='[Calculation_737183023870148612]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Calculation_737183023867781123]) / COUNTD([Customer ID])*100' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Korea&quot;' value='&quot;South Korea&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='real' name='[Customer ID]' role='dimension' type='ordinal' />
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Invoice]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[InvoiceDate]' derivation='Month-Trunc' name='[tmn:InvoiceDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_737183023870148612]' derivation='User' name='[usr:Calculation_737183023870148612:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action1_FE43E96DBC314FE78D6444A7CAD07F53]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Action (Country)]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[tmn:InvoiceDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[usr:Calculation_737183023870148612:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#ffda69' fontname='Tableau Semibold' fontsize='10'>Repeat Customer Rate</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#ffffff' fontname='Tableau Semibold' fontsize='10'><![CDATA[<[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[usr:Calculation_737183023870148612:qk]> %]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{42756757-977F-4A7F-9490-6A3DE5E53D4F}' />
+    </worksheet>
+    <worksheet name='repeat_customers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned' name='federated.13pmsdm1xdnqaw18m9ylk1arakmy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13pmsdm1xdnqaw18m9ylk1arakmy'>
+            <column caption='Repeat Customers' datatype='real' name='[Calculation_737183023867781123]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF { FIXED [Customer ID] : COUNTD([Invoice]) } &gt; 1 THEN [Customer ID] END' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Korea&quot;' value='&quot;South Korea&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='real' name='[Customer ID]' role='dimension' type='ordinal' />
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Invoice]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_737183023867781123]' derivation='Sum' name='[sum:Calculation_737183023867781123:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[InvoiceDate]' derivation='Month-Trunc' name='[tmn:InvoiceDate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[tmn:InvoiceDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[sum:Calculation_737183023867781123:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#ffffff' fontname='Tableau Semibold' fontsize='12'>Repeat Customers</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#ffffff' fontname='Tableau Semibold'><![CDATA[<[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[sum:Calculation_737183023867781123:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CEF88651-2E8A-4442-903E-7E240A4DF99E}' />
+    </worksheet>
+    <worksheet name='total_customers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned' name='federated.13pmsdm1xdnqaw18m9ylk1arakmy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13pmsdm1xdnqaw18m9ylk1arakmy'>
+            <column caption='Total Customers' datatype='integer' name='[Calculation_737183023865851905]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Customer ID])' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Korea&quot;' value='&quot;South Korea&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='real' name='[Customer ID]' role='dimension' type='ordinal' />
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[InvoiceDate]' derivation='Month-Trunc' name='[tmn:InvoiceDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_737183023865851905]' derivation='User' name='[usr:Calculation_737183023865851905:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action1_FE43E96DBC314FE78D6444A7CAD07F53]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Action (Country)]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[tmn:InvoiceDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[usr:Calculation_737183023865851905:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#ffda69' fontname='Tableau Semibold' fontsize='10'>Total Customers</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#ffffff' fontname='Tableau Semibold' fontsize='10'><![CDATA[<[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[usr:Calculation_737183023865851905:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{19270E08-108F-438A-8275-98B6E2096A5D}' />
+    </worksheet>
+    <worksheet name='total_orders'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned' name='federated.13pmsdm1xdnqaw18m9ylk1arakmy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13pmsdm1xdnqaw18m9ylk1arakmy'>
+            <column caption='Total Orders' datatype='integer' name='[Calculation_737183023866097666]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Invoice])' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Korea&quot;' value='&quot;South Korea&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Invoice]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[InvoiceDate]' derivation='Month-Trunc' name='[tmn:InvoiceDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_737183023866097666]' derivation='User' name='[usr:Calculation_737183023866097666:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action1_FE43E96DBC314FE78D6444A7CAD07F53]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Action (Country)]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[tmn:InvoiceDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[usr:Calculation_737183023866097666:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#ffda69' fontname='Tableau Semibold' fontsize='10'>Total Orders</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#ffffff' fontname='Tableau Semibold' fontsize='10'><![CDATA[<[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[usr:Calculation_737183023866097666:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A078E48F-58A5-4197-BC10-6794DF7278CB}' />
+    </worksheet>
+    <worksheet name='total_revenue'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned' name='federated.13pmsdm1xdnqaw18m9ylk1arakmy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13pmsdm1xdnqaw18m9ylk1arakmy'>
+            <column caption='Total Revenue' datatype='real' name='[Calculation_737183023865389056]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([TotalPrice])' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Korea&quot;' value='&quot;South Korea&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column caption='Total Price' datatype='real' name='[TotalPrice]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[InvoiceDate]' derivation='Month-Trunc' name='[tmn:InvoiceDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_737183023865389056]' derivation='User' name='[usr:Calculation_737183023865389056:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action1_FE43E96DBC314FE78D6444A7CAD07F53]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[none:Country:nk]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[Action (Country)]</column>
+            <column>[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[tmn:InvoiceDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[usr:Calculation_737183023865389056:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffda69' fontname='Tableau Semibold' fontsize='10'>Total Revenue</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#ffffff' fontname='Tableau Semibold' fontsize='10'><![CDATA[$ <[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[usr:Calculation_737183023865389056:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5F6FFB41-760C-494C-A2DB-CB874A15CF87}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Retail Analytics Dashboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold' fontsize='15'>Retail Intelligence Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='border-color' value='#ffffff' />
+          <format attr='border-width' value='0' />
+          <format attr='border-style' value='none' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='cleaned' name='federated.13pmsdm1xdnqaw18m9ylk1arakmy' />
+      </datasources>
+      <datasource-dependencies datasource='federated.13pmsdm1xdnqaw18m9ylk1arakmy'>
+        <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+        <column-instance column='[InvoiceDate]' derivation='Month-Trunc' name='[tmn:InvoiceDate:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97856' id='22' param='horz' type-v2='layout-flow' w='98998' x='501' y='1072'>
+            <zone h='97856' id='20' param='horz' type-v2='layout-flow' w='98998' x='501' y='1072'>
+              <zone h='97856' id='18' param='horz' type-v2='layout-flow' w='98998' x='501' y='1072'>
+                <zone h='97856' id='16' type-v2='layout-basic' w='98998' x='501' y='1072'>
+                  <zone h='14868' id='5' param='vert' type-v2='layout-flow' w='98998' x='501' y='1072'>
+                    <zone h='6568' id='7' type-v2='title' w='98998' x='501' y='1072'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='8300' id='6' type-v2='layout-basic' w='98998' x='501' y='7640'>
+                      <zone h='8300' id='8' name='total_revenue' show-title='false' w='24734' x='501' y='7640'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='8300' id='9' name='total_customers' show-title='false' w='24751' x='49984' y='7640'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='8300' id='10' name='total_orders' show-title='false' w='24749' x='25235' y='7640'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='8300' id='11' name='repeat_customer%' show-title='false' w='24764' x='74735' y='7640'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='38338' id='12' name='Monthly Revenue Trend' w='49483' x='501' y='15940'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='40296' id='13' name='Top 10 Customers' w='49515' x='49984' y='58632'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='40361' id='14' name='repeat vs new' w='49483' x='501' y='58567'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='42692' id='15' name='map' w='49515' x='49984' y='15940'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='4289' id='23' name='Monthly Revenue Trend' param='[federated.13pmsdm1xdnqaw18m9ylk1arakmy].[tmn:InvoiceDate:qk]' type-v2='filter' values='database' w='49483' x='501' y='54278'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A887A676-67E1-474B-B100-1C53D75E9844}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='total_revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='150'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{8929F865-C2A5-4C84-911A-61A1F3F99B34}' />
+    </window>
+    <window class='worksheet' maximized='true' name='total_customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A7E8B71C-A1B9-4C43-BD3F-5656C89E0C62}' />
+    </window>
+    <window class='worksheet' name='total_orders'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{21003948-A3B2-422B-A490-21D32F5EEDF2}' />
+    </window>
+    <window class='worksheet' name='repeat_customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A063B709-0A7B-4E08-B313-36227B1C7D56}' />
+    </window>
+    <window class='worksheet' name='repeat_customer%'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{3A02E330-7C96-4F44-8779-5751655A6BA3}' />
+    </window>
+    <window class='worksheet' name='Monthly Revenue Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{758A2D63-060D-4064-B0EA-FC383BF744D3}' />
+    </window>
+    <window class='worksheet' name='Top 10 Customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{DD4FD6B4-253F-4512-9CF1-94B9741596CD}' />
+    </window>
+    <window class='worksheet' name='map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C34E1ECC-53AB-40E5-BF76-9FD21547BA6F}' />
+    </window>
+    <window class='worksheet' name='repeat vs new'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D24DA491-CDD5-4411-B31F-AB771AA59E4C}' />
+    </window>
+    <window class='dashboard' name='Retail Analytics Dashboard'>
+      <viewpoints>
+        <viewpoint name='Monthly Revenue Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 Customers'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='repeat vs new'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='repeat_customer%'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='total_customers'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='total_orders'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='total_revenue'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='15' />
+      <simple-id uuid='{07075530-85A2-4DED-B4B4-878611372892}' />
+    </window>
+  </windows>
+</workbook>
